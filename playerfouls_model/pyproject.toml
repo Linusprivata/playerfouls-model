@@ -1,0 +1,32 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "playerfouls_model"
+version = "0.0.1"
+description = "About"
+authors = [
+  { name = "Linus Utbult" },
+]
+
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    
+]
+requires-python = "==Project for prediction and staking on playerfouls bets3.12.2"
+
+
+[tool.ruff]
+line-length = 99
+src = ["playerfouls_model"]
+include = ["pyproject.toml", "playerfouls_model/**/*.py"]
+
+[tool.ruff.lint]
+extend-select = ["I"]  # Add import sorting
+
+[tool.ruff.lint.isort]
+known-first-party = ["playerfouls_model"]
+force-sort-within-sections = true
+
