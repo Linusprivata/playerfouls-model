@@ -57,5 +57,11 @@ About
     └── plots.py                <- Code to create visualizations
 ```
 
+### Reproduce raw layer
+
+1. `python -m pip install -r requirements.txt`
+2. `make raw` – downloads PL 2021–2024 player/team match stats into `data/raw/fbref/`.
+
+
 --------
 

@@ -58,6 +58,11 @@ create_environment:
 # PROJECT RULES                                                                 #
 #################################################################################
 
+.PHONY: raw
+
+raw:
+	python -m src.etl.build_base_tables
+
 
 ## Make dataset
 .PHONY: data
